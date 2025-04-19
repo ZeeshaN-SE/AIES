@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>LMS</title>
+    <meta name="description" content="Learning Management System">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Serif+Display:100,300,400,400italic,700,700italic,900'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=DM+Sans:300,400,400italic,500,700,700italic,900'>
+    <link rel='stylesheet' href='../../css/global.css'>
+    <link rel='stylesheet' href='css/structure.css'>
+    <link rel='stylesheet' href='css/tutor.css'>
+    <link rel='stylesheet' href='css/custom.css'>
+    
+    
+</head>
+
+<body class="color-custom style-default button-round layout-full-width no-shadows header-transparent minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-left menu-link-color menuo-right menuo-no-borders logo-no-margin mobile-tb-hide mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-sticky">
+    <div id="Wrapper">
+        <div id="Header_wrapper">
+            <header id="Header">
+                <div id="Top_bar">
+                    <div class="container">
+                        <div class="column one">
+                            <div class="top_bar_left clearfix">
+                                <div class="logo">
+                                    <a id="logo" href="../../index-tutor.html" title="AIES" data-height="60" data-padding="20"><img class="logo-main scale-with-grid" src="./images/AIES_logo.png" data-retina="./images/AIES_logo.png" data-height="54" alt="AIES" data-no-retina><img class="logo-sticky scale-with-grid" src="./images/AIES_logo.png" data-retina="./images/AIES_logo.png" data-height="54" alt="AIES" data-no-retina><img class="logo-mobile scale-with-grid" src="./images/AIES_logo.png" data-retina="./images/AIES_logo.png" data-height="54" alt="AIES" data-no-retina><img class="logo-mobile-sticky scale-with-grid" src="./images/AIES_logo.png" data-retina="./images/AIES_logo.png" data-height="54" alt="AIES" data-no-retina></a>
+                                </div>
+                                <div class="menu_wrapper">
+                                    <nav id="menu">
+                                        <ul id="menu-main-menu" class="menu menu-main">
+                                            <li>
+                                                <a href="../../index-tutor.html"><span>Home</span></a>
+                                            </li>
+                                            <li class="current_page_parent current-menu-item">
+                                                <a href="#"><span>LMS Dashboard</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html"><span>Contact us</span></a>
+                                            </li>
+                                        </ul>
+                                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
+                                </div>
+                            </div>
+                            <div class="top_bar_right">
+                                <div class="top_bar_right_wrapper">
+                                    <a href="#" class="action_button">Student Login <i class="icon-right-open themecolor"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="Subheader">
+                <div class="container">
+                    <div class="column one">
+                        <h1 class="title">Student Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="Content">
+            <div class="content_wrapper clearfix">
+                <div class="sections_group">
+                    <div class="section lms-dashboard">
+                        <div class="section_wrapper clearfix">
+                            <div class="column one">
+                                <div class="student-info">
+                                    <div class="student-avatar">JD</div>
+                                    <div class="student-details">
+                                        <h3>Zeeshan</h3>
+                                        <p>Student ID: STU-2025-1234 | Mathematics Major</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="lms-tabs">
+                                    <div class="lms-tab active" onclick="switchTab('attendance')">Attendance</div>
+                                    <div class="lms-tab" onclick="switchTab('results')">Results</div>
+                                    <div class="lms-tab" onclick="switchTab('courses')">Enrolled Courses</div>
+                                </div>
+                                
+                                <!-- Attendance Tab -->
+                                <div id="attendance" class="lms-content active">
+                                    <div class="search-bar">
+                                        <input type="text" placeholder="Search by subject, date, or status..." onkeyup="searchTable('attendance-table', this.value)">
+                                    </div>
+                                    
+                                    <div class="lms-card">
+                                        <h4>Attendance Overview</h4>
+                                        <p>Current Semester: Spring 2025 | Attendance Rate: 92%</p>
+                                        
+                                        <table class="lms-table" id="attendance-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Subject</th>
+                                                    <th>Time</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>April 18, 2025</td>
+                                                    <td>Advanced Calculus</td>
+                                                    <td>10:00 AM - 12:00 PM</td>
+                                                    <td class="status-present">Present</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>April 17, 2025</td>
+                                                    <td>Statistics</td>
+                                                    <td>2:00 PM - 4:00 PM</td>
+                                                    <td class="status-present">Present</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>April 16, 2025</td>
+                                                    <td>Linear Algebra</td>
+                                                    <td>9:00 AM - 11:00 AM</td>
+                                                    <td class="status-absent">Absent</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>April 15, 2025</td>
+                                                    <td>Differential Equations</td>
+                                                    <td>1:00 PM - 3:00 PM</td>
+                                                    <td class="status-present">Present</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>April 14, 2025</td>
+                                                    <td>Geometry</td>
+                                                    <td>11:00 AM - 1:00 PM</td>
+                                                    <td class="status-present">Present</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>April 11, 2025</td>
+                                                    <td>Advanced Calculus</td>
+                                                    <td>10:00 AM - 12:00 PM</td>
+                                                    <td class="status-present">Present</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>April 10, 2025</td>
+                                                    <td>Statistics</td>
+                                                    <td>2:00 PM - 4:00 PM</td>
+                                                    <td class="status-present">Present</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <!-- Results Tab -->
+                                <div id="results" class="lms-content">
+                                    <div class="search-bar">
+                                        <input type="text" placeholder="Search by subject, exam, or grade..." onkeyup="searchTable('results-table', this.value)">
+                                    </div>
+                                    
+                                    <div class="lms-card">
+                                        <h4>Current Term Results</h4>
+                                        <p>Spring Semester 2025 | GPA: 3.65/4.0</p>
+                                        
+                                        <table class="lms-table" id="results-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Exam Type</th>
+                                                    <th>Date</th>
+                                                    <th>Score</th>
+                                                    <th>Grade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Advanced Calculus</td>
+                                                    <td>Mid-term Exam</td>
+                                                    <td>March 15, 2025</td>
+                                                    <td>92/100</td>
+                                                    <td class="grade-a">A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Statistics</td>
+                                                    <td>Assignment #3</td>
+                                                    <td>April 2, 2025</td>
+                                                    <td>85/100</td>
+                                                    <td class="grade-b">B+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Linear Algebra</td>
+                                                    <td>Quiz #2</td>
+                                                    <td>March 22, 2025</td>
+                                                    <td>78/100</td>
+                                                    <td class="grade-c">C+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Differential Equations</td>
+                                                    <td>Mid-term Exam</td>
+                                                    <td>March 18, 2025</td>
+                                                    <td>91/100</td>
+                                                    <td class="grade-a">A-</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Geometry</td>
+                                                    <td>Project Submission</td>
+                                                    <td>April 5, 2025</td>
+                                                    <td>95/100</td>
+                                                    <td class="grade-a">A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Statistics</td>
+                                                    <td>Mid-term Exam</td>
+                                                    <td>March 16, 2025</td>
+                                                    <td>72/100</td>
+                                                    <td class="grade-c">C</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                                <!-- Courses Tab -->
+                                <div id="courses" class="lms-content">
+                                    <div class="search-bar">
+                                        <input type="text" placeholder="Search by course, instructor, or credits..." onkeyup="searchTable('courses-table', this.value)">
+                                    </div>
+                                    
+                                    <div class="lms-card">
+                                        <h4>Enrolled Courses</h4>
+                                        <p>Spring Semester 2025 | Total Credits: 15</p>
+                                        
+                                        <table class="lms-table" id="courses-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Course</th>
+                                                    <th>Code</th>
+                                                    <th>Instructor</th>
+                                                    <th>Schedule</th>
+                                                    <th>Credits</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Advanced Calculus</td>
+                                                    <td>MATH-401</td>
+                                                    <td>Dr. Sarah Johnson</td>
+                                                    <td>Mon, Wed, Fri 10:00 AM - 12:00 PM</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Statistics</td>
+                                                    <td>MATH-302</td>
+                                                    <td>Prof. Michael Chen</td>
+                                                    <td>Tue, Thu 2:00 PM - 4:00 PM</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Linear Algebra</td>
+                                                    <td>MATH-303</td>
+                                                    <td>Dr. Robert Williams</td>
+                                                    <td>Mon, Wed 9:00 AM - 11:00 AM</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Differential Equations</td>
+                                                    <td>MATH-402</td>
+                                                    <td>Prof. Elizabeth Taylor</td>
+                                                    <td>Tue, Thu 1:00 PM - 3:00 PM</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Geometry</td>
+                                                    <td>MATH-203</td>
+                                                    <td>Dr. James Peterson</td>
+                                                    <td>Wed, Fri 11:00 AM - 1:00 PM</td>
+                                                    <td>3</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer id="Footer" class="clearfix">
+            <div class="widgets_wrapper">
+                <div class="container">
+                    <div class="column one-third">
+                        <aside class="widget_text widget widget_custom_html">
+                            <h4>Our address</h4>
+                            <div class="textwidget custom-html-widget">
+                                <p>
+                                    Japan road,,
+                                    <br>kahuta, 4000, 
+                                    <br> Islamabad, Pakistan
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="column one-third">
+                        <aside class="widget_text widget widget_custom_html">
+                            <h4>Opening hours</h4>
+                            <div class="textwidget custom-html-widget">
+                                <p>
+                                    Monday - Friday
+                                    <br> 09:00 AM - 06:00 PM
+                                </p>
+                                <p>
+                                    Saturday
+                                    <br> 10:00 AM - 05:00 PM
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="column one-third">
+                        <aside class="widget_text widget widget_custom_html">
+                            <div class="textwidget custom-html-widget">
+                                <div style="text-align: right;">
+                                    <p style="font-size: 30px;">
+                                        <a href="#"><i class="icon-twitter-circled"></i></a><a href="#"><i class="icon-facebook-circled"></i></a><a href="#"><i class="icon-skype-circled"></i></a>
+                                    </p>
+                                    <hr class="no_line" style="margin:0 auto 25px">
+                                    <h3>+92 307 9925825<i class="icon-mobile" style="color:#f97c5f"></i></h3>
+                                    <p>
+                                        If you have any question, feel free to call us
+                                    </p>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">
+                <div class="container">
+                    <div class="column one">
+                        <a id="back_to_top" class="button button_js" href><i class="icon-up-open-big"></i></a>
+                        <div class="copyright">
+                            &copy; 2025 AIES <a target="_blank" rel="nofollow" href="https://1.envato.market/9ZxXY"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="Side_slide" class="right dark" data-width="250">
+        <div class="close-wrapper">
+            <a href="#" class="close"><i class="icon-cancel-fine"></i></a>
+        </div>
+        <div class="extras">
+            <a href="#" class="action_button">Student Login <i class="icon-right-open themecolor"></i></a>
+            <div class="extras-wrapper"></div>
+        </div>
+        <div class="menu_wrapper"></div>
+    </div>
+    <div id="body_overlay"></div>
+
+    <!-- JS -->
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/mfn.menu.js"></script>
+    <script src="../../js/jquery.plugins.js"></script>
+    <script src="../../js/jquery.jplayer.min.js"></script>
+    <script src="../../js/animations/animations.js"></script>
+    <script src="../../js/translate3d.js"></script>
+    <script src="../../js/scripts.js"></script>
+    
+    <script>
+        // Tab switching functionality
+        function switchTab(tabId) {
+            // Hide all content
+            const contents = document.querySelectorAll('.lms-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Deactivate all tabs
+            const tabs = document.querySelectorAll('.lms-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Activate selected tab and content
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        // Search functionality
+        function searchTable(tableId, query) {
+            query = query.toLowerCase();
+            const table = document.getElementById(tableId);
+            const rows = table.getElementsByTagName('tr');
+            
+            // Start from 1 to skip the header row
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                const cells = row.getElementsByTagName('td');
+                let found = false;
+                
+                for (let j = 0; j < cells.length; j++) {
+                    const cellText = cells[j].textContent.toLowerCase();
+                    if (cellText.indexOf(query) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+                
+                if (found) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
